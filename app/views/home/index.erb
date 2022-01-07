@@ -1,0 +1,8 @@
+Hello <%= @name %>!!<br/>
+<a href="/?name=yakuza">Display yakuza</a><br/>
+<form action="/" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+  <label for="name">name:</label>
+  <input type="text" name="name" />
+  <input type="submit" />
+</form>
